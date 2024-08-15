@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import ChildComponent from "./ChildComponent.vue";
+import ChildComponent from './ChildComponent.vue';
 
 export default {
-  name: "ParentComponent",
+  name: 'ParentComponent',
 
   components: {
     ChildComponent,
@@ -17,7 +17,7 @@ export default {
 
   methods: {
     handleClick(payload) {
-      console.log("Parent Component", payload);
+      console.log('Parent Component', payload);
     },
   },
 };

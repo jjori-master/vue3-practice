@@ -7,13 +7,13 @@
 
 <script>
 export default {
-  name: "ChildComponent",
+  name: 'ChildComponent',
 
-  emits: ["click"],
+  emits: ['click'],
 
   methods: {
     handleClick() {
-      this.$emit("click", "Child Component");
+      this.$emit('click', 'Child Component');
     },
   },
 };
