@@ -1,10 +1,7 @@
 import { createApp } from 'vue';
-import './style.css';
+import router from './router';
 import App from './App.vue';
 
-const app = createApp(App).mount('#app');
+import './style.css';
 
-app.config.errorHandler = (err, vm, info) => {
-  console.error(err, vm, info);
-  debugger;
-};
+createApp(App).use(router).mount('#app');

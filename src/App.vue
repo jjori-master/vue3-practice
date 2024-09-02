@@ -1,19 +1,15 @@
 <script setup></script>
 
 <template>
-  <div>
-    <h1>Hello world</h1>
-
-    <h3>Emits Test</h3>
-    <ParentComponent />
-  </div>
+  <h1>Hello App!!</h1>
+  <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
+  <nav>
+    <ul>
+      <li><RouterLink to="/">Home</RouterLink></li>
+      <li><RouterLink to="/emits">Emits</RouterLink></li>
+    </ul>
+  </nav>
+  <main>
+    <RouterView />
+  </main>
 </template>
-
-<script>
-import ParentComponent from './components/emitsExample/ParentComponent.vue';
-export default {
-  components: {
-    ParentComponent,
-  },
-};
-</script>
