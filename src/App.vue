@@ -7,6 +7,7 @@
     <ul>
       <li><RouterLink to="/">Home</RouterLink></li>
       <li><RouterLink to="/emits">Emits</RouterLink></li>
+      <li><RouterLink to="/non-prop">NonProp</RouterLink></li>
     </ul>
   </nav>
   <main>
